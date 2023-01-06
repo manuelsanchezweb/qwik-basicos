@@ -1,0 +1,46 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+:root {
+  --qwik-dark-blue: #006ce9;
+  --qwik-light-blue: #18b6f6;
+  --qwik-light-purple: #ac7ff4;
+  --qwik-dark-purple: #713fc2;
+  --brand-color: #2ab6f6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fefefe;
+  font-family: "Fira Sans", sans-serif;
+}
+
+main {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 0 120px;
+  }
+}

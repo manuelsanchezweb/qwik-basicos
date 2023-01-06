@@ -1,0 +1,15 @@
+button {
+  background-color: var(--brand-color);
+  border: 1px solid black;
+  outline: none;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background-color: black;
+}

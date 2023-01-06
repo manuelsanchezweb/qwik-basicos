@@ -1,0 +1,46 @@
+.textimage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.textimage h1 {
+  font-size: clamp(1.5rem, 6.5vw, 100px);
+  text-align: center;
+}
+
+.textimage h1 span {
+  color: var(--brand-color);
+}
+
+.textimage svg {
+  width: 100px;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .textimage {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .textimage h1 {
+    text-align: left;
+  }
+
+  .textimage svg {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .textimage svg {
+    width: 300px;
+  }
+}
