@@ -11,8 +11,8 @@ export const Textimage = component$(() => {
   useStylesScoped$(styles);
 
   useClientEffect$(() => {
-    let left = document.querySelector(".textimage h1");
-    let right = document.querySelector(".textimage svg");
+    const left = document.querySelector(".textimage h1");
+    const right = document.querySelector(".textimage svg");
 
     const textMediaTimeline = gsap.timeline({
       defaults: { duration: 0.4, ease: "power2.out" },
